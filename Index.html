@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Grounded Light Massage</title>
+<style>
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background: #F8F5F2;
+    color: #3A3A3A;
+  }
+  header {
+    background: #A8BBA2;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #F8F5F2;
+    margin: 0;
+  }
+  nav a {
+    color: #F8F5F2;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .btn-primary {
+    background: #EFC77D;
+    color: #3A3A3A;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .btn-primary:hover {
+    background: #d8b25a;
+  }
+  .hero {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    color: #F8F5F2;
+    text-align: center;
+    padding: 8rem 2rem 6rem;
+  }
+  .hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  h3 {
+    font-family: 'Playfair Display', serif;
+    color: #A8BBA2;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  p, li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  ul.services-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul.services-list li {
+    background: #D1BFA9;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+  }
+  form {
+    background: #A8BBA2;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #3A3A3A;
+  }
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+    border: none;
+  }
+  form button {
+    background: #EFC77D;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #3A3A3A;
+  }
+  form button:hover {
+    background: #d8b25a;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #A8BBA2;
+    color: #F8F5F2;
+    margin-top: 4rem;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: #F8F5F2;
+    text-decoration: none;
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Grounded Light Massage</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="btn-primary" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Book Now</button>
+</header>
+
+<section class="hero">
+  <h2>Restore Balance. Reclaim Your Energy.</h2>
+  <p>Professional Reiki & Therapeutic Bodywork</p>
+  <button class="btn-primary" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Schedule Your Session</button>
+</section>
+
+<section id="about">
+  <h3>Welcome to Grounded Light Massage</h3>
+  <p>
+    A wellness practice dedicated to restoring balance through therapeutic bodywork and Reiki energy healing.  
+    We specialize in <strong>Energetic Alignment</strong> and <strong>Physical Restoration</strong>, helping you reconnect with your body, calm your nervous system, and realign your natural energy flow.  
+    Whether you're seeking relief from physical tension, emotional stress, or simply a space to recharge, our integrative approach supports your whole self — mind, body, and spirit.
+  </p>
+</section>
+
+<section id="services">
+  <h3>Our Services</h3>
+  <ul class="services-list">
+    <li><strong>Massage Therapy</strong><br>Relaxation, deep tissue, and therapeutic techniques tailored to you.</li>
+    <li><strong>Reiki Energy Healing</strong><br>Realign your energy flow to promote healing and calm.</li>
+    <li><strong>Wellness Consultations</strong><br>Personalized plans for ongoing body and energy care.</li>
+  </ul>
+</section>
+
+<section id="booking">
+  <h3>Book Your Session</h3>
+  <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+    
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+    
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" />
+    
+    <label for="date">Preferred Date & Time</label>
+    <input type="text" id="date" name="date" placeholder="e.g. June 30, 3pm" />
+    
+    <label for="message">Additional Message</label>
+    <textarea id="message" name="message" rows="3"></textarea>
+    
+    <button type="submit">Request Appointment</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h3>Contact Us</h3>
+  <p>Email: <a href="mailto:info@groundedlightmassage.com">info@groundedlightmassage.com</a></p>
+  <p>Phone: (555) 123-4567</p>
+  <div class="social-icons">
+    <a href="#" aria-label="Instagram">Instagram</a> | 
+    <a href="#" aria-label="Facebook">Facebook</a> | 
+    <a href="#" aria-label="TikTok">TikTok</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Grounded Light Massage. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
